@@ -1,112 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SavageLane</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Language" content="en-US" />
+  <meta name="google" content="notranslate" />
+  <title>SavageLane – Your Referral Resource!</title>
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+
   <style>
-    body {
+    html, body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: black url('background-placeholder.jpg') no-repeat center center fixed;
+      padding: 0;
+      min-height: 100vh;
+      font-family: 'Inter', sans-serif;
+      background: #0d0d0d url('/images/explore.png') no-repeat center center;
       background-size: cover;
-      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      color: #e0c98d;
+      text-shadow: 2px 2px 8px #000;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .referral-section {
+      width: 100%;
+      max-width: 800px;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .referral-card {
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid #333;
+      border-radius: 12px;
+      padding: 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      transition: all 0.3s ease;
+    }
+
+    .referral-card:hover {
+      background-color: rgba(255, 102, 165, 0.1);
+      border-color: #ff66a5;
+      box-shadow: 0 0 12px #ff66a5;
+    }
+
+    .referral-card img {
+      width: 150px;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+
+    .referral-card p {
+      font-size: 1rem;
+      color: #ddd;
+      margin-bottom: 1rem;
+    }
+
+    .referral-card a {
+      font-size: 1rem;
+      color: #ffffff;
+      background-color: rgba(255, 102, 165, 0.3);
+      padding: 0.75rem 1.5rem;
+      border-radius: 999px;
+      border: 1px solid #ff66a5;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .referral-card a:hover {
+      background-color: #ff66a5;
+      color: #fff;
+    }
+
+    footer {
+      margin-top: auto;
+      font-size: 0.8rem;
+      color: #666;
+      padding: 2rem 1rem;
       text-align: center;
     }
-    header {
-      padding: 50px 20px 20px;
-      font-size: 48px;
-      font-weight: bold;
-      letter-spacing: 2px;
-    }
-    .tagline {
-      font-size: 20px;
-      margin-bottom: 40px;
-    }
-    .referral-section {
-      margin: 40px 20px;
-    }
-    .referral-item {
-      margin-bottom: 60px;
-    }
-    .referral-item img {
-      width: 200px;
-      max-width: 80%;
-      margin-bottom: 20px;
-    }
-    .referral-item a {
-      display: inline-block;
-      padding: 10px 20px;
-      margin-top: 10px;
-      background: white;
-      color: black;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
-      transition: background 0.3s;
-    }
-    .referral-item a:hover {
-      background: #ccc;
-    }
-    footer {
-      font-size: 12px;
-      margin: 40px 0 20px;
-      color: gray;
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
     }
   </style>
+
+  <!-- Google Analytics and GTM (Insert your actual tags here) -->
+  <!-- Example placeholders -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA4_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'YOUR_GA4_ID');
+  </script>
+
 </head>
 
 <body>
-  <header>
-    SAVAGELANE
-  </header>
 
-  <div class="tagline">
-    Access your top resources.
-  </div>
+  <header>
+    <h1>SavageLane</h1>
+    <p>Secure the Bag. Earn While You Sleep.</p>
+  </header>
 
   <div class="referral-section">
 
-    <div class="referral-item">
-      <img src="coinbase-placeholder.jpg" alt="Coinbase">
-      <div>Get $10 in Bitcoin when you buy or sell $100.</div>
-      <a href="YOUR_COINBASE_REFERRAL_LINK_HERE" target="_blank">Join Coinbase</a>
+    <div class="referral-card">
+      <img src="/images/cashapp.jpg" alt="Cash App">
+      <p>Get $5 free when you send your first $5 through Cash App.</p>
+      <a href="https://cash.app/app/5TCM8J4" target="_blank">Get Cash App</a>
     </div>
 
-    <div class="referral-item">
-      <img src="blockfi-placeholder.jpg" alt="BlockFi">
-      <div>Earn interest on your crypto. Start with bonus Bitcoin.</div>
-      <a href="YOUR_BLOCKFI_REFERRAL_LINK_HERE" target="_blank">Join BlockFi</a>
-    </div>
-
-    <div class="referral-item">
-      <img src="kraken-placeholder.jpg" alt="Kraken">
-      <div>Trade securely with Kraken. Earn bonuses with your first deposit.</div>
-      <a href="YOUR_KRAKEN_REFERRAL_LINK_HERE" target="_blank">Join Kraken</a>
-    </div>
-
-    <div class="referral-item">
-      <img src="gemini-placeholder.jpg" alt="Gemini">
-      <div>Earn $10 in Bitcoin after your first $100 trade.</div>
-      <a href="YOUR_GEMINI_REFERRAL_LINK_HERE" target="_blank">Join Gemini</a>
-    </div>
-
-    <div class="referral-item">
-      <img src="strike-placeholder.jpg" alt="Strike App">
-      <div>Send Bitcoin instantly. Get $5 when you sign up.</div>
-      <a href="YOUR_STRIKE_REFERRAL_LINK_HERE" target="_blank">Join Strike</a>
-    </div>
-
-    <div class="referral-item">
-      <img src="voyager-placeholder.jpg" alt="Voyager">
-      <div>Get $25 in Bitcoin after trading $100.</div>
-      <a href="YOUR_VOYAGER_REFERRAL_LINK_HERE" target="_blank">Join Voyager</a>
-    </div>
+    <!-- Future cards can be added below here -->
 
   </div>
 
   <footer>
-    © 2025 SavageLane | All Rights Reserved | Built for the Savage.
+    © 2025 SavageLane | All Rights Reserved
   </footer>
 
 </body>
