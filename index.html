@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="Content-Language" content="en-US" />
   <meta name="google" content="notranslate" />
-  <title>SavageLane – Your Referral Resource!</title>
+  <title>SavageLane – Secure the Bag</title>
 
   <!-- Tailwind CSS -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet" />
@@ -61,16 +61,11 @@
       text-align: center;
       margin-bottom: 2rem;
       transition: all 0.3s ease;
-    }
-
-    .referral-card:hover {
-      background-color: rgba(255, 102, 165, 0.1);
-      border-color: #ff66a5;
-      box-shadow: 0 0 12px #ff66a5;
+      overflow-wrap: break-word;
     }
 
     .referral-card img {
-      width: 150px;
+      max-width: 100%;
       height: auto;
       margin-bottom: 1rem;
     }
@@ -90,6 +85,8 @@
       border: 1px solid #ff66a5;
       text-decoration: none;
       transition: all 0.3s ease;
+      display: inline-block;
+      margin-top: 1rem;
     }
 
     .referral-card a:hover {
@@ -116,7 +113,6 @@
   </style>
 
   <!-- Google Analytics and GTM (Insert your actual tags here) -->
-  <!-- Example placeholders -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA4_ID"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -137,12 +133,12 @@
   <div class="referral-section">
 
     <div class="referral-card">
-      <img src="/images/cashapp.jpg" alt="Cash App">
+      <img src="/images/cashapp.png" alt="Cash App">
       <p>Get $5 free when you send your first $5 through Cash App.</p>
-      <a href="https://cash.app/app/5TCM8J4" target="_blank">Get Cash App</a>
+      <a href="YOUR_CASHAPP_REFERRAL_LINK" target="_blank">Get Cash App</a>
     </div>
 
-    <!-- Future cards can be added below here -->
+    <!-- Future referral cards can be stacked below here -->
 
   </div>
 
