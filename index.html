@@ -44,6 +44,53 @@
       color: #ccc;
     }
 
+    .featured-banner {
+      width: 100%;
+      max-width: 1000px;
+      background: linear-gradient(to right, #4c00ff, #00d2ff);
+      border-radius: 20px;
+      margin: 2rem 1rem;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    }
+
+    .featured-banner img {
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+      border-radius: 16px;
+    }
+
+    .featured-banner h2 {
+      font-size: 2rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+
+    .featured-banner p {
+      font-size: 1.1rem;
+      color: #eee;
+      margin-bottom: 1.5rem;
+    }
+
+    .featured-banner a {
+      font-size: 1.1rem;
+      background: #ffffff;
+      color: #4c00ff;
+      padding: 0.75rem 2rem;
+      border-radius: 999px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .featured-banner a:hover {
+      background: #4c00ff;
+      color: #ffffff;
+    }
+
     .referral-section {
       width: 100%;
       max-width: 800px;
@@ -111,6 +158,9 @@
       header p {
         font-size: 1rem;
       }
+      .featured-banner h2 {
+        font-size: 1.5rem;
+      }
     }
   </style>
 
@@ -132,13 +182,17 @@
     <p>Trusted referral links - updated May 2025.</p>
   </header>
 
-  <div class="referral-section">
+<!-- FEATURED BANNER -->
+<div class="featured-banner">
+  <img src="/images/kraken.png" alt="Kraken Exchange">
+  <h2>Featured Referral: Kraken</h2>
+  <p>Make a qualifying deposit and trade and receive $50 in Bitcoin. Start trading securely with Kraken today.</p>
+  <a href="https://krakenpro.onelink.me/9f1e/5f2auvsc" target="_blank">Claim Your $50 Bonus</a>
+</div>
 
-    <div class="referral-card">
-      <img src="/images/kraken.png" alt="Kraken Exchange">
-      <p>Get $10 in Bitcoin when you buy or sell $100 through Kraken. Trade crypto securely with one of the most trusted platforms.</p>
-      <a href="https://krakenpro.onelink.me/9f1e/5f2auvsc" target="_blank">Join Kraken</a>
-    </div>
+
+  <!-- OTHER REFERRALS -->
+  <div class="referral-section">
 
     <div class="referral-card">
       <img src="/images/cashapp.png" alt="Cash App">
